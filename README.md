@@ -24,19 +24,25 @@ Docker-контейнер для синхронизации репозитори
 
 ## Быстрый старт
 
-### 1. Сборка Docker-образа
+### 1. Клонируем репозиторий
+
+```bash
+git clone https://github.com/marchenkovv/redos-repo-sync.git && cd redos-repo-sync
+```
+
+### 2. Сборка Docker-образа
 
 ```bash
 sudo docker build -t redos-repo-sync .
 ```
 
-### 2. Запуск контейнера
+### 3. Запуск контейнера
 
 ```bash
 sudo docker run -d --name redos-repo-container -p 80:80 redos-repo-sync
 ```
 
-### 3. Проверка работы
+### 4. Проверка работы
 
 Проверить статус контейнера:
 ```bash
